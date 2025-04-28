@@ -6,7 +6,7 @@ services:
     ports:
       - "${FRONTEND_PORT:-3001}:80"
     environment:
-      - VITE_API_URL=http://backend:${BACKEND_PORT:-5001}/api
+      - VITE_API_URL=${BACKEND_URL:-http://backend:${BACKEND_PORT:-5001}/api}
     depends_on:
       - backend
     networks:
