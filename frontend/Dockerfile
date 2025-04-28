@@ -1,5 +1,5 @@
 # Build stage
-FROM node:20-alpine as build
+FROM node:20-alpine AS build
 
 WORKDIR /app
 
@@ -23,9 +23,6 @@ COPY --from=build /app/dist /usr/share/nginx/html
 
 # Copy custom nginx config
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-# Expose port 3000
-EXPOSE 3000
 
 # Command to run the server
 CMD ["nginx", "-g", "daemon off;"]
