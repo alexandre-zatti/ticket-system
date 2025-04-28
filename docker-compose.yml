@@ -3,10 +3,10 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+      args:
+        - VITE_API_URL=${BACKEND_URL:-http://backend:${BACKEND_PORT:-5001}/api}
     ports:
       - "${FRONTEND_PORT:-3001}:80"
-    environment:
-      - VITE_API_URL=${BACKEND_URL}
     depends_on:
       - backend
     networks:
