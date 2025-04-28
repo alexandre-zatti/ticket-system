@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.ticket-list {
+  margin-top: 30px;
+}
+
+.ticket-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.ticket-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.ticket-status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.status-open {
+  background-color: #ffeb3b;
+  color: #333;
+}
+
+.status-assigned {
+  background-color: #2196f3;
+  color: white;
+}
+
+.status-in-progress {
+  background-color: #ff9800;
+  color: white;
+}
+
+.status-completed {
+  background-color: #4caf50;
+  color: white;
+}
+
+.ticket-details {
+  margin-top: 10px;
+}
+
+.ticket-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.skill-tag {
+  background-color: #e0e0e0;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+  border-bottom: 2px solid #4CAF50;
+  font-weight: bold;
+}
+
+.ticket-assignment {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.assign-controls {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.assign-controls select {
+  width: auto;
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
