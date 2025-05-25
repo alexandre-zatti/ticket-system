@@ -1,6 +1,6 @@
 # Ticket System
 
-A ticket management system with frontend and backend components.
+A very simple ticket management system with Express + React to use for teaching purposes.
 
 ## Docker Setup
 
